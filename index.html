@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>КотлOFF - Профессиональные газовые, сантехнические и электромонтажные работы в Чебоксарах</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-fire"></i>
+                </div>
+                <div class="logo-text">Котл<span class="logo-off">OFF</span></div>
+            </a>
+           
+            <div class="header-cta">
+                <a href="tel:+79029242466" class="header-contact">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <span class="contact-text">+7 (902) 924-24-66</span>
+                </a>
+                <button id="openFormBtn" class="header-button">
+                    <i class="fas fa-calendar-alt"></i>
+                    Заказать
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero секция с живым фоном -->
+    <section class="hero">
+        <div class="hero-bg-animated">
+            <!-- Фоновые изображения -->
+            <div class="bg-image bg-1"></div>
+            <div class="bg-image bg-2"></div>
+            <div class="bg-image bg-3"></div>
+            <div class="bg-image bg-4"></div>
+            <div class="bg-image bg-5"></div>
+            <div class="bg-image bg-6"></div>
+            <!-- Наложение -->
+            <div class="bg-overlay"></div>
+        </div>
+        <div class="container hero-content">
+            <h1 class="hero-title">Профессиональные<br><span>инженерные услуги</span></h1>
+            
+            <!-- Основное описание -->
+            <p class="hero-subtitle">Газовые, сантехнические и электромонтажные работы в Чебоксарах. Комплексное обслуживание инженерных систем с гарантией качества.</p>
+            
+            <!-- Дополнительное описание -->
+            <div class="hero-description">
+                <p><span class="company-name">Котл<span class="company-off">OFF</span></span> — надежный партнер с подтвержденным многолетним опытом. Наша репутация, основанная на сотнях выполненных проектов и отзывов клиентов, — это гарантия стабильной и безопасной работы ваших инженерных систем. Мы обеспечиваем долгосрочную функциональность на каждом этапе — от точной диагностики до квалифицированного монтажа.</p>
+            </div>
+           
+            <button id="heroCtaBtn" class="cta-button">
+                <i class="fas fa-bolt"></i>
+                Оставить заявку
+            </button>
+        </div>
+        
+        <!-- Индикатор скролла -->
+        <div class="scroll-indicator" id="scrollIndicator">
+            <span class="scroll-arrow"></span>
+            <span>Листайте вниз</span>
+        </div>
+    </section>
+
+    <!-- Секция услуг -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Наши услуги</div>
+                <h2 class="section-title">Что мы предлагаем</h2>
+            </div>
+           
+            <div class="services-grid">
+                <!-- Газовые работы -->
+                <div class="service-card gas-card">
+                    <div class="service-icon-container">
+                        <i class="fas fa-fire service-icon"></i>
+                    </div>
+                    <h3 class="service-title" data-text="Газовые работы">Газовые работы</h3>
+                    <p class="service-description">Полный спектр услуг по монтажу, обслуживанию и ремонту газового оборудования с соблюдением всех норм безопасности.</p>
+                   
+                    <ul class="service-features">
+                        <li>Настенные газовые котлы</li>
+                        <li>Напольные газовые котлы</li>
+                        <li>Газовые плиты</li>
+                        <li>Варочные панели</li>
+                        <li>Газовые колонки</li>
+                        <li>Бойлеры и проточные водонагреватели</li>
+                    </ul>
+                   
+                    <!-- КНОПКА НАД ЦЕНОЙ -->
+                    <button class="order-service-btn" data-service="Газовые работы">
+                        <i class="fas fa-calendar-check"></i>
+                        Оставить заявку
+                    </button>
+                    
+                    <!-- ЦЕНА ПОД КНОПКОЙ -->
+                    <div class="service-price">от 969 ₽</div>
+                </div>
+               
+                <!-- Сантехнические работы -->
+                <div class="service-card plumbing-card">
+                    <div class="service-icon-container">
+                        <i class="fas fa-faucet service-icon"></i>
+                    </div>
+                    <h3 class="service-title" data-text="Сантехнические работы">Сантехнические работы</h3>
+                    <p class="service-description">Профессиональный монтаж и ремонт систем водоснабжения, отопления и канализации любой сложности.</p>
+                   
+                    <ul class="service-features">
+                        <li>Монтаж систем отопления</li>
+                        <li>Установка сантехнического оборудования</li>
+                        <li>Замена труб и радиаторов</li>
+                        <li>Устранение протечек и засоров</li>
+                        <li>Монтаж водонагревателей</li>
+                        <li>Обслуживание котельного оборудования</li>
+                    </ul>
+                   
+                    <!-- КНОПКА НАД ЦЕНОЙ -->
+                    <button class="order-service-btn" data-service="Сантехнические работы">
+                        <i class="fas fa-calendar-check"></i>
+                        Оставить заявку
+                    </button>
+                    
+                    <!-- ЦЕНА ПОД КНОПКОЙ -->
+                    <div class="service-price">от 969 ₽</div>
+                </div>
+               
+                <!-- Электромонтаж -->
+                <div class="service-card electrical-card">
+                    <div class="service-icon-container">
+                        <i class="fas fa-bolt service-icon"></i>
+                    </div>
+                    <h3 class="service-title" data-text="Электромонтаж">Электромонтаж</h3>
+                    <p class="service-description">Электромонтажные работы любой сложности с соблюдением всех норм безопасности и использованием современных материалов.</p>
+                   
+                    <ul class="service-features">
+                        <li>Полная замена электропроводки</li>
+                        <li>Монтаж электрощитового оборудования</li>
+                        <li>Установка розеток и выключателей</li>
+                        <li>Подключение электроплит и духовых шкафов</li>
+                        <li>Монтаж систем заземления</li>
+                        <li>Устранение неисправностей в электросетях</li>
+                    </ul>
+                   
+                    <!-- КНОПКА НАД ЦЕНОЙ -->
+                    <button class="order-service-btn" data-service="Электромонтаж">
+                        <i class="fas fa-calendar-check"></i>
+                        Оставить заявку
+                    </button>
+                    
+                    <!-- ЦЕНА ПОД КНОПКОЙ -->
+                    <div class="service-price">от 969 ₽</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция отзывов -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Отзывы клиентов</div>
+                <h2 class="section-title">Что говорят о нас</h2>
+            </div>
+           
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">Были морозы сломался котёл, я позвонил в течение часа приехал разобрал проверил на месте сказал дело в плате Забрал через 2 дня приехал поставил всё работает Ладно хоть печка была у меня а то бы пипец было Просто красавчик удаче в работе</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">Ми</div>
+                        <div class="author-info">
+                            <div class="author-name">Михаил</div>
+                            <div class="author-location">Чебоксары</div>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">Замечательный мастер. Приехал, как и обещал, в течение часа. Все неисправности устранил максимально быстро. Все понятно объяснил и показал, что делать, если вдруг возникнет схожая проблема. По цене - заплатили на порядок меньше, чем думали. Без необоснованных переплат.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">Дм</div>
+                        <div class="author-info">
+                            <div class="author-name">Дмитрий</div>
+                            <div class="author-location">Чебоксары</div>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">У нас старая редкая газовая колонка. Обратились с проблемой, что колонка включалась с взрывом и хлопком. Мастер приехал в тот же день сразу в воскресенье. Все починил. Нашел проблему в мембране. Сам съездил ее купил. Все четко быстро надёжно честно и недорого. Работает колонка как новая. Лучший мастер в городе)) Михаил спасибо большое</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">КГ</div>
+                        <div class="author-info">
+                            <div class="author-name">Кирилл Горбунов</div>
+                            <div class="author-location">Чебоксары</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title">Готовы начать?</h2>
+            <p class="cta-subtitle">Оставьте заявку и мы перезвоним вам в течение 30 минут для консультации и расчета стоимости работ.</p>
+           
+            <div class="cta-features">
+                <div class="cta-feature">
+                    <div class="cta-feature-icon"><i class="fas fa-shield-alt"></i></div>
+                    <div class="cta-feature-text">Гарантия 6 месяцев</div>
+                </div>
+                <div class="cta-feature">
+                    <div class="cta-feature-icon"><i class="fas fa-ruble-sign"></i></div>
+                    <div class="cta-feature-text">Прозрачные цены</div>
+                </div>
+                <div class="cta-feature">
+                    <div class="cta-feature-icon"><i class="fas fa-tools"></i></div>
+                    <div class="cta-feature-text">Работа с техникой премиум-класса: да</div>
+                </div>
+                <div class="cta-feature">
+                    <div class="cta-feature-icon"><i class="fas fa-clock"></i></div>
+                    <div class="cta-feature-text">Опыт в сфере: 10 лет и больше</div>
+                </div>
+                <div class="cta-feature">
+                    <div class="cta-feature-icon"><i class="fas fa-file-contract"></i></div>
+                    <div class="cta-feature-text">Работа по договору: да</div>
+                </div>
+                <div class="cta-feature">
+                    <div class="cta-feature-icon"><i class="fas fa-handshake"></i></div>
+                    <div class="cta-feature-text">Работа с юрлицами или ИП: Да</div>
+                </div>
+                <div class="cta-feature">
+                    <div class="cta-feature-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="cta-feature-text">Где работает исполнитель: У клиента, У себя</div>
+                </div>
+            </div>
+           
+            <button id="finalCtaBtn" class="cta-button-large">
+                <i class="fas fa-phone-alt"></i>
+                Оставить заявку
+            </button>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <div class="footer-logo">Котл<span class="footer-logo-off">OFF</span></div>
+                    <p class="footer-description">Профессиональные услуги по монтажу, обслуживанию и ремонту газового, сантехнического и электрического оборудования в Чебоксары и области.</p>
+                   
+                    <a href="tel:+79029242466" class="footer-contact">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+7 (902) 924-24-66</span>
+                    </a>
+                   
+                    <a href="#" class="footer-contact">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>г. Чебоксары</span>
+                    </a>
+                </div>
+               
+                <div class="footer-column">
+                    <h3 class="footer-heading">Услуги</h3>
+                    <ul class="footer-links">
+                        <li><a href="#services"><i class="fas fa-fire"></i> Газовые работы</a></li>
+                        <li><a href="#services"><i class="fas fa-faucet"></i> Сантехнические работы</a></li>
+                        <li><a href="#services"><i class="fas fa-bolt"></i> Электромонтаж</a></li>
+                        <li><a href="#"><i class="fas fa-tools"></i> Комплексное обслуживание</a></li>
+                    </ul>
+                </div>
+               
+                <div class="footer-column">
+                    <h3 class="footer-heading">Контакты</h3>
+                    <ul class="footer-links">
+                        <li><a href="tel:+79029242466"><i class="fas fa-phone"></i> +7 (902) 924-24-66</a></li>
+                        <li><a href="#"><i class="fas fa-map-marker-alt"></i> г. Чебоксары</a></li>
+                        <li><a href="#"><i class="fas fa-car"></i> Выезд по области</a></li>
+                    </ul>
+                </div>
+            </div>
+           
+            <div class="copyright">
+                © 2026 КотлOFF. Все права защищены.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальное окно -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">×</button>
+            <h2 class="modal-title">Оставить заявку</h2>
+            <form id="orderForm">
+                <div class="form-group">
+                    <label for="name" class="form-label">Ваше имя</label>
+                    <input type="text" id="name" name="name" class="form-input" required placeholder="Введите ваше имя">
+                </div>
+               
+                <div class="form-group">
+                    <label for="phone" class="form-label">Номер телефона</label>
+                    <input type="tel" id="phone" name="phone" class="form-input" required placeholder="+7 (___) ___-__-__">
+                </div>
+               
+                <div class="form-group">
+                    <label for="comment" class="form-label">Комментарий к заявке</label>
+                    <textarea id="comment" name="comment" class="form-textarea" placeholder="Опишите вашу задачу или проблему"></textarea>
+                </div>
+               
+                <button type="submit" class="form-button">
+                    <i class="fas fa-paper-plane"></i>
+                    Отправить заявку
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
