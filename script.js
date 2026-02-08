@@ -38,6 +38,16 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(card);
     });
     
+        // Наблюдаем за секцией отзывов и пузырями
+    const testimonialsSection = document.querySelector('.testimonials');
+    if (testimonialsSection) {
+        observer.observe(testimonialsSection);
+    }
+    
+    document.querySelectorAll('.testimonial-bubble').forEach(function(bubble) {
+        observer.observe(bubble);
+    });
+    
     // Наблюдаем за карточками отзывов
     document.querySelectorAll('.testimonial-card').forEach(function(card) {
         observer.observe(card);
